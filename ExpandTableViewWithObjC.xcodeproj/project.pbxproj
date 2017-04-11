@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC4DEF9C1E9C64E2008CF112 /* ViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4DEF9B1E9C64E2008CF112 /* ViewControllerSwift.swift */; };
+		EC4DEF9E1E9C6710008CF112 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4DEF9D1E9C6710008CF112 /* CustomHeaderCell.swift */; };
 		ECF981901E9BEB7A002DC0B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF9818F1E9BEB7A002DC0B1 /* main.m */; };
 		ECF981931E9BEB7A002DC0B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF981921E9BEB7A002DC0B1 /* AppDelegate.m */; };
 		ECF981961E9BEB7A002DC0B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF981951E9BEB7A002DC0B1 /* ViewController.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC4DEF9A1E9C64E1008CF112 /* ExpandTableViewWithObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpandTableViewWithObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC4DEF9B1E9C64E2008CF112 /* ViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSwift.swift; sourceTree = "<group>"; };
+		EC4DEF9D1E9C6710008CF112 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
 		ECF9818B1E9BEB7A002DC0B1 /* ExpandTableViewWithObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandTableViewWithObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF9818F1E9BEB7A002DC0B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECF981911E9BEB7A002DC0B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 				ECF9819C1E9BEB7A002DC0B1 /* LaunchScreen.storyboard */,
 				ECF9819F1E9BEB7A002DC0B1 /* Info.plist */,
 				ECF9818E1E9BEB7A002DC0B1 /* Supporting Files */,
+				EC4DEF9B1E9C64E2008CF112 /* ViewControllerSwift.swift */,
+				EC4DEF9D1E9C6710008CF112 /* CustomHeaderCell.swift */,
+				EC4DEF9A1E9C64E1008CF112 /* ExpandTableViewWithObjC-Bridging-Header.h */,
 			);
 			path = ExpandTableViewWithObjC;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 					ECF9818A1E9BEB7A002DC0B1 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 4CZCH5G62V;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4DEF9E1E9C6710008CF112 /* CustomHeaderCell.swift in Sources */,
+				EC4DEF9C1E9C64E2008CF112 /* ViewControllerSwift.swift in Sources */,
 				ECF981961E9BEB7A002DC0B1 /* ViewController.m in Sources */,
 				ECF981931E9BEB7A002DC0B1 /* AppDelegate.m in Sources */,
 				ECF981901E9BEB7A002DC0B1 /* main.m in Sources */,
@@ -273,11 +284,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4CZCH5G62V;
 				INFOPLIST_FILE = ExpandTableViewWithObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExpandTableViewWithObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExpandTableViewWithObjC/ExpandTableViewWithObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -285,11 +300,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4CZCH5G62V;
 				INFOPLIST_FILE = ExpandTableViewWithObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ExpandTableViewWithObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExpandTableViewWithObjC/ExpandTableViewWithObjC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -312,6 +330,7 @@
 				ECF981A41E9BEB7A002DC0B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
